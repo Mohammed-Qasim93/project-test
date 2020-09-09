@@ -1,0 +1,36 @@
+.sign-up {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $dark-three;
+  border-radius: 5px;
+  text-shadow: 1px black;
+  color: $light-three;
+
+  .left {
+    width: 50%;
+    height: 100%;
+    .form {
+      width: 70%;
+      button[type="submit"] {
+        width: 50%;
+      }
+    }
+  }
+  .right {
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    &-heading {
+      font-size: 5rem;
+      line-height: 3rem;
+      padding: 4rem;
+    }
+    &-text {
+      line-height: 4rem;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+}

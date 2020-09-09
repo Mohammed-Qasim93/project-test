@@ -1,0 +1,38 @@
+.container {
+  width: 90vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.current {
+  background-color: $light-two;
+  color: $dark-two;
+}
+
+.sign {
+  background-color: $green-two;
+  color: $light-one;
+  border-radius: 50px;
+}
+
+.offers {
+  position: relative;
+  z-index: 1;
+  &::after {
+    animation: offersscale 1s infinite linear;
+    z-index: -1;
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: -2%;
+    border: solid 2px transparent;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: $green-two;
+    &:hover {
+      border: solid 2px $green-one;
+    }
+  }
+}

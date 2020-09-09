@@ -1,0 +1,43 @@
+@keyframes shine {
+  from {
+    transform: rotateY(0deg);
+    color: $green-one;
+  }
+  to {
+    transform: rotateY(360deg);
+    color: gold;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(20%);
+  }
+}
+
+@keyframes offersscale {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

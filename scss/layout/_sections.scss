@@ -1,0 +1,102 @@
+.section {
+  &-a {
+    margin: 1rem auto 0rem auto;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    &__card {
+      margin: auto;
+      width: 50%;
+      height: 90%;
+      box-shadow: 1rem 1rem 2rem $dark-three;
+      border-radius: 10px;
+    }
+    &__header {
+      margin: -0.5rem auto;
+      padding-bottom: 0.5rem;
+      font-size: 4rem;
+      border-bottom: 2px solid $green-one;
+      width: 30%;
+      &::before {
+        @include psudo;
+        margin-right: 2rem;
+      }
+      &::after {
+        @include psudo;
+        margin-left: 2rem;
+      }
+    }
+    &__head {
+      font-size: 3rem;
+      margin: 2rem auto;
+    }
+    &__img {
+      width: 30%;
+      height: 30%;
+      margin: 1rem auto;
+      background: url("../img/1.jpg") no-repeat center center / cover;
+      border-radius: 100%;
+    }
+    &__text {
+      font-size: 2rem;
+      margin: auto;
+    }
+  }
+
+  &-b {
+    height: 100vh;
+    &__head {
+      margin: -0.5rem auto;
+      padding-bottom: 0.5rem;
+      font-size: 4rem;
+      text-align: center;
+      border-bottom: 2px solid $green-one;
+      width: 30%;
+      &::before {
+        @include psudo;
+        margin-right: 2rem;
+      }
+      &::after {
+        @include psudo;
+        margin-left: 2rem;
+      }
+    }
+    &__bg1 {
+      @include cpath(100%, 0, 0, 0, 0, 100%, $green-one);
+    }
+    &__bg2 {
+      @include cpath(100%, 0, 0, 0, 100%, 100%, $green-one);
+    }
+    &__bg3 {
+      @include cpath(0, 100%, 0, 0, 100%, 100%, $green-one);
+    }
+    &__bg4 {
+      @include cpath(100%, 0, 100%, 100%, 0, 100%, $green-one);
+    }
+    &__offer {
+      margin: auto;
+      width: 50%;
+      height: 90%;
+      box-shadow: 1rem 1rem 2rem $dark-three;
+      border-radius: 10px;
+      transition: all 0.7s ease-in-out;
+      backface-visibility: hidden;
+      filter: grayscale(10) saturate(4);
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+        filter: none;
+      }
+    }
+    &__header {
+      font-size: 3rem;
+      margin: 2rem auto;
+      backface-visibility: hidden;
+    }
+    &__text {
+      font-size: 2rem;
+      margin: auto;
+      backface-visibility: hidden;
+    }
+  }
+}

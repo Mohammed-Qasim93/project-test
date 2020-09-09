@@ -1,0 +1,31 @@
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 0;
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 3rem;
+  box-shadow: 0.5rem 0.5rem 1rem $dark-three;
+  &:hover {
+    background-color: $dark-three;
+    color: $light-one;
+    a:hover,
+    a:visited {
+      color: $light-one;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-dark {
+  color: $light-one;
+  background-color: $dark-two;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 50%;
+  &:hover {
+    background-color: $dark-three;
+  }
+}

@@ -1,0 +1,48 @@
+.main {
+  height: 90vh;
+
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    clip-path: polygon(0 0, 100% 0, 99% 100%, 6% 100%, 0 95%);
+  }
+  &-text {
+    &__heading {
+      width: 100%;
+      font-size: 5rem;
+    }
+    &__typo {
+      font-size: 4rem;
+      padding: 3rem 0rem;
+    }
+  }
+  &-btn {
+    &__green {
+      background-color: $green-two;
+    }
+    &__light {
+      background-color: $light-two;
+      a {
+        color: $dark-two;
+      }
+    }
+  }
+
+  &-img {
+    width: 30%;
+    height: 90%;
+    background: url("../img/1.jpg") no-repeat center center/cover;
+    border-radius: 100%;
+    filter: grayscale(90) saturate(3);
+    opacity: 0.8;
+    transition: all 0.8s cubic-bezier(0.32, 0.1, 0.78, 1.23);
+    &:hover {
+      filter: none;
+      opacity: 1;
+      transform: scale(1.01);
+    }
+  }
+}

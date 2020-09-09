@@ -1,0 +1,14 @@
+.footer {
+  font-size: 3rem;
+  background-color: $light-two;
+  height: 10vh;
+  width: 90vw;
+  margin: auto;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &-copy {
+    margin-left: 1rem;
+  }
+}

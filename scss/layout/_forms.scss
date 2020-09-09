@@ -1,0 +1,51 @@
+.form {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-bottom: 2px solid $green-one;
+  outline: none;
+  border-radius: 5px;
+  &:invalid {
+    border: 2px solid red;
+  }
+  &:focus {
+    border: 2px solid $green-one;
+    outline: none;
+  }
+}
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  height: 40%;
+  border: 2px solid transparent;
+  border-bottom: 2px solid $green-one;
+  outline: none;
+  border-radius: 5px;
+  &:focus {
+    border: 2px solid $green-one;
+    outline: none;
+  }
+}
+
+select {
+  width: 25%;
+  height: 5%;
+  font-size: 2rem;
+  border: 2px solid transparent;
+  border-bottom: 2px solid $green-one;
+  &:focus {
+    outline: none;
+    border: 2px solid $green-one;
+  }
+}

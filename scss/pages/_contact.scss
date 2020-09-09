@@ -1,0 +1,24 @@
+.contact {
+  height: 80vh;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-right {
+    height: 100%;
+    width: 35%;
+    background-color: $green-one;
+    clip-path: polygon(
+      52% 23%,
+      39% 38%,
+      100% 39%,
+      100% 61%,
+      39% 61%,
+      54% 78%,
+      0% 50%
+    );
+
+    animation: arrow 0.8s cubic-bezier(0.46, 0.94, 1, 0.83) infinite;
+  }
+}
